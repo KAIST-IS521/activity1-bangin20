@@ -4,7 +4,7 @@
 
 
 
-**<div style="text-align: right"> GSIS 20193313 Changhun Song </div>**
+**<p align = "right"> GSIS 20193313 Changhun Song </p>**
 
 
 
@@ -20,6 +20,15 @@ This program developed on python 3.7, but it still works in the other python3 ve
   - Any errors will return exit code 1
 
 
+
+### Improvement Discussion
+
+- Inefficiency : This program reads whole csv file twice (validating, column parsing)
+  - If we process raw string of file to extract column, this problem can be solved
+
+- Job in Functional way : Making target column by iterating all rows doesn't look like clean code. We can do it more simply and clearly with map function.
+- Simple Exception Handling
+  - There are lots of exception handling code which decreases readability of codes. We can make it much more contracted way
 
 
 
